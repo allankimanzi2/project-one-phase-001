@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your nearest sports community is just a tap away">
+    <meta name="keywords" content="turf, review system, sports, reservations">
+    <meta name="author" content="Kimanzi">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4a5fd6;
+            color: #333;
+            margin: 0; /* Reset default margin */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #01274e;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .header-container {
+            text-align: center;
+            position: relative;
+            background-image: url('https://starcitysportsclub.com/wp-content/uploads/2023/04/IMG_5769-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .additional-image-container img {
+            width: 500px; /* Adjust the width as needed */
+            border-radius: 8px; /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+
+        h1 {
+            text-align: center;
+            color: #200d0d;
+            margin: 0; /* Remove default margin */
+        }
+
+        #app {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #2d8d3d;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .text-between-images {
+            text-align: center;
+            max-width: 300px; /* Adjust the maximum width as needed */
+            margin: 0 20px; /* Adjust the margin as needed */
+        }
+
+        .text-between-images h2 {
+            color: #007BFF; /* Text color for the heading */
+            margin-bottom: 10px;
+        }
+
+        .text-between-images p {
+            color: #063364;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+
+        .comments-container {
+            margin-top: 10px;
+        }
+
+        .comments-container h4 {
+            color: #007BFF;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #commentsList {
+            list-style: none;
+            padding: 0;
+        }
+
+        #commentsList li {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .turf-card {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #8eeb16;
+            border-radius: 8px;
+            background-color: #58d1d1;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            box-shadow: auto;
+        }
+
+        .turf-card:hover {
+            transform: scale(1.03);
+        }
+
+        .turf-card p {
+            color: #070d14; /* Set the text color to a blue shade */
+            font-weight: bold; /* Make the text bold */
+            font-size: 16px; /* Set the font size to 16 pixels */
+            font-style: oblique;
+            margin-bottom: 8px; /* Add a bottom margin of 8 pixels */
+            /* Add any additional styling as needed */
+        }
+
+        button {
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:enabled {
+            background-color: #02311b;
+            cursor: not-allowed;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #031222;
+            color: #368f53;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            height: auto;
+            margin-top: auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            height: auto;
+            width: -100px;
+            max-width: 500px; /* Adjust maximum width */
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            justify-content: center; /* Center the content */
+        }
+
+        .footer-logo img {
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: rgb(0, 130, 65);
+        }
+
+        .footer-bottom {
+            margin-top: auto; /* Adjust spacing */
+            width:100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav-bar"><ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Make a review</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+        <div class="additional-image-container">
+            <img src="https://starcitysportsclub.com/wp-content/uploads/2023/04/IMG_5769-scaled.jpg"
+                alt="Additional Image">
+        </div>
+    </header>
+
+    <div id="app">
+        <div class="image-container">
+            <img src="https://t4.ftcdn.net/jpg/05/19/09/25/360_F_519092593_DufnPSozd4y4xNBrG0D4pVZfqy0Jt6D3.jpg"
+                alt="Beautiful Image">
+        </div>
+        <div class="text-between-images">
+            <h2>Make a review just With the Touch</h2>
+            <p>Share your reviews...</p>
+        </div>
+
+        <!-- Turf Cards Section -->
+        <div class="turf-card">
+            <h3>Turf A</h3>
+            <p>Location: Santiago Bernabeu</p>
+            <p>Status: Available</p>
+
+            <!-- Comment Section -->
+            <div class="comment-section">
+                <textarea placeholder="Add your comment..."></textarea>
+                <button onclick="postComment()">Post Comment</button>
+            </div>
+        
+            <!-- Display Comments -->
+            <div class="comments-container">
+                <h4>Comments:</h4>
+                <ul id="commentsList"></ul>
+            </div>
+            
+            <div class="turf-card">
+            <h3>Turf B</h3>
+            <p>Location: Old Trafford</p>
+            <p>Status: Unavailable</p>
+
+            <!-- Comment Section -->
+            <div class="comment-section">
+                <textarea placeholder="Add your comment..."></textarea>
+                <button onclick="postComment()">Post Comment</button>
+            </div>
+
+             <!-- Display Comments -->
+             <div class="comments-container">
+                <h4>Comments:</h4>
+                <ul id="commentsList"></ul>
+            </div>
+            
+            <div class="turf-card">
+            <h3>Turf C</h3>
+            <p>Location: Allianz Arena</p>
+            <p>Status: Available</p>
+
+            <!-- Comment Section -->
+            <div class="comment-section">
+                <textarea placeholder="Add your comment..."></textarea>
+                <button onclick="postComment()">Post Comment</button>
+            </div>
+
+             <!-- Display Comments -->
+             <div class="comments-container">
+                <h4>Comments:</h4>
+                <ul id="commentsList"></ul>
+             </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/903/913/non_2x/football-illustration-file-sports-design-logo-free-png.png"
+                        alt="Football Logo">
+                    <h3>Play Football</h3>
+                </div>
+                <p>Kenya's Leading Sports Venue App</p>
+                <a href="#">Join our network and grow your business</a>
+                <a href="#">Partner With Us</a>
+                <a href="#">Download AK solutions app for exciting offers</a>
+                <div class="footer-social">
+                    <a href="#">google play</a>
+                    <a href="#">app store</a>
+                    <a href="#">instagram</a>
+                    <a href="#">facebook</a>
+                    <a href="#">linkedin</a>
+                </div>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>AK startup mission campus</p>
+                <p>Sports Arcade, Ngong rd.</p>
+                <p>Nairobi, Kenya</p>
+                <p>+254111720111</p>
+                <p>support@AK.in</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2024. Designed by AK.solutions | Company Registered as easyjobs Online Services Private Ltd
+            </p>
+            <div>
+                <a href="#">FAQ</a>
+                <a href="#">Site Map</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
+

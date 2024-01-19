@@ -1,0 +1,8 @@
+{
+    "turfs": [
+      { "id": 1, "name": "Turf A", "location": "Santiago Bernabeu", "available": true },
+      { "id": 2, "name": "Turf B", "location": "Old Trafford", "available": false },
+      { "id": 3, "name": "Turf C", "location": "Allianz Arena", "available": true }
+    ]
+  }
+  

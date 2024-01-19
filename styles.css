@@ -1,0 +1,218 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin:100%;
+    padding: 0;
+    display:contents;
+    justify-content:safe;
+    align-items: normal;
+    min-height: 100vh;
+    background-image: url(https://media.istockphoto.com/id/1440483244/photo/soccer-stadium-ball-center-midfield.jpg?s=1024x1024&w=is&k=20&c=XtY7KN3bH_Io4qBHd3w4kO1qLNmzAH7KRRFeBXpl2Z8=);
+}
+
+header {
+    
+    background-color: #02070c;
+    color: #020000;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Add a subtle gradient background */
+    background: linear-gradient(90deg, #02070c 0%, #011627 100%);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+.header-container {
+    background-image: url('https://starcitysportsclub.com/wp-content/uploads/2023/04/IMG_5769-scaled.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    color: #4b2d02; /* Text color on the background image */
+    padding: 20px; /* Add padding to your header container */
+    text-align: center;
+    /* Add a subtle overlay to the background image */
+    position: relative;
+}
+
+.additional-image-container img {
+    width: 500px; /* Adjust the width as needed */
+    /* Add any additional styling as needed */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+h1 {
+    text-align: center;
+    color: #200d0d;
+    margin: 0; /* Remove default margin */
+}
+
+#app {
+    width: 100%;
+    max-width: 1000px;
+    padding: 100px;
+    background-color: #088a2f;
+    border-radius: 80px;
+    border-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    display: block;
+    margin: 10px auto; /* Add margin for spacing */
+    width: 100%; /* Adjust the width as needed */
+    max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-between-images {
+    text-align: center;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.text-between-images h2 {
+    color: #007BFF; /* Text color for the heading */
+    margin-bottom: 10px;
+}
+
+.text-between-images p {
+    color: #063364;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.comments-container {
+    margin-top: 10px;
+}
+
+.comments-container h4 {
+    color: #007BFF;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#commentsList {
+    list-style: none;
+    padding: 0;
+}
+
+#commentsList li {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.turf-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #8eeb16;
+    border-radius: 8px;
+    background-color: #58d1d1;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: auto;
+}
+
+.turf-card:hover {
+    transform: scale(1.03);
+}
+
+.turf-card p {
+    color: #070d14; /* Set the text color to a blue shade */
+    font-weight: bold; /* Make the text bold */
+    font-size: 16px; /* Set the font size to 16 pixels */
+    font-style: oblique;
+    margin-bottom: 8px; /* Add a bottom margin of 8 pixels */
+    /* Add any additional styling as needed */
+}
+
+button {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:enabled {
+    background-color: #02311b;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.footer-logo img {
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-left: 40%;
+    margin-top: -90px;
+    color: #00090a;
+}
+
+.footer-logo h3 {
+    color: #fff; /* Set the text color to white */
+    font-size: 24px; /* Set the font size to 24 pixels */
+    font-family: cursive;
+    margin-bottom: 10px; /* Add a bottom margin of 10 pixels */
+    text-transform: uppercase; /* Convert text to uppercase */
+    /* Add any additional styling as needed */
+}
+
+.footer section h3 {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    padding-bottom: 0cm;
+    line-height: normal;
+}
+
+.footer-icon {
+    width: 20px;
+    margin: auto;
+    height: auto;
+}
+ 
+footer {
+    background-color: #031222;
+    color: #110404;
+    padding: 10px;
+    text-align: center;
+    width: 1000%;
+    position: fixed; /* Change to 'fixed' for a fixed position at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-content {
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
